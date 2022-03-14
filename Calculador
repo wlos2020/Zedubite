@@ -1,0 +1,29 @@
+print ("Olá, meu nome Zedubit, seu calculador de Índice de Massa Corpórea - IMC!")
+
+
+ano_atual = int("2022")
+nascimento = int( input("Digite seu ano de nascimento: ") )
+
+Idade = ano_atual - nascimento
+
+print(Idade)
+
+altura = float( input("Digite sua altura: ") )
+peso = float( input("Digite seu peso: ") )
+
+IMC = peso / (altura * altura)
+
+print("Seu IMC é:")
+print(IMC)
+
+if IMC >=30:
+  print("Obesidade")
+
+if IMC >=25 and IMC <30:
+  print("Sobrepeso")
+
+if IMC <25:
+  print("Peso Adequado")
+
+if IMC <=18.5:
+  print("Baixo Peso")
